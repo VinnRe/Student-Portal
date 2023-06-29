@@ -16,7 +16,7 @@ class stdManager {
 private:
     stdInfo* head;
     stdInfo* tail;
-    int numStudents;
+    int numStudents = 0;
 
 public:
     stdManager() : head(nullptr), tail(nullptr) {}
@@ -105,7 +105,7 @@ public:
         bool continueMenu = true;
         while (continueMenu) {
             cout << "\t========== STUDENT ID DETAILS ==========\n";
-            cout << "\t[ 1] Add Student Information\n";
+            cout << "\t[ 1 ] Add Student Information\n";
             cout << "\t[ 2 ] Get Student Information\n";
             cout << "\t[ 3 ] Exit the Program\n";
             cout << "\tChoice: ";
