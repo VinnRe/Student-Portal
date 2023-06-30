@@ -13,7 +13,7 @@ public:
 };
 
 class stdManager {
-private:
+private:    
     stdInfo* head;
     stdInfo* tail;
     int numStudents = 0;
@@ -85,7 +85,8 @@ public:
             if (head == nullptr) {
                 head = newStudent;
                 tail = newStudent;
-            } else {
+            } 
+            else {
                 tail->next = newStudent;
                 tail = newStudent;
             }
